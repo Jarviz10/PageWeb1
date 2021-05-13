@@ -1,0 +1,27 @@
+body
+{
+    background-color: coral;
+}
+
+*
+{ /*Selector universal*/
+    margin:0;/*Agregar margen*/
+    padding:0;/*Margen interno de los elementos*/
+    /*Practicamente son para los espacios*/
+}
+
+h2/*h3,h4.. en caso de querer alterar varias*/
+{
+    /*Sirve para que todos los h2 sean alterados*/
+    color:blue;
+    font-size: 45px;/*Sirve para el tamaño de letra*/
+}
+
+
+
+
+
+
+
+
+
