@@ -1,21 +1,152 @@
-body
-{
-    background-color:darksalmon;
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
-*
-{ /*Selector universal*/
-    margin:2 px;/*Agregar margen*/
-    padding:2 px;/*Margen interno de los elementos*/
-    /*Practicamente son para los espacios*/
+.button{
+
+    background-color:darkgreen;
+    color: snow;
+    display:inline-block;
+    font-size: 1.25em;
+    margin: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration:none;
+    text-shadow: 0 1px 0 rgba(red, green, blue, alpha);
+    box-shadow: 0 5px 5px rgba(red, green, blue, alpha);
+    position:relative;
+    left: 1000px;
 }
 
-h2/*h3,h4.. en caso de querer alterar varias*/
-{
-    /*Sirve para que todos los h2 sean alterados*/
-    color:darkslategrey;
-    font-size: 45px;/*Sirve para el tamaño de letra*/
+.button2{
+
+    background-color:darkgreen;
+    color: snow;
+    display:inline-block;
+    font-size: 1.25em;
+    margin: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 200px;
+    text-decoration:none;
+    text-shadow: 0 1px 0 rgba(red, green, blue, alpha);
+    box-shadow: 0 5px 5px rgba(red, green, blue, alpha);
+    position:relative;
+    left: 50px;
 }
+
+.radius{
+    border-radius: 50px;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 0px;
+    padding-top: 7px;
+}
+.button:active{
+    background-color: chartreuse;
+}
+
+.button2:active{
+    background-color: chartreuse;
+}
+
+body { 
+    min-height: 100vh;
+    background-image: linear-gradient(-45deg, #e3ddd9 50%, #36221c 50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo {
+    font-size: 30px;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: fantasy;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.title {
+    font-size: 40px;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: fantasy;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.titulo2 {
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+    /*font-family: fantasy;*/
+    margin-bottom: 80px;
+    color: #fff;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 100%;
+    height: 50px;
+    background-color: #36221c;
+}
+
+/*---------------------------------*/
+/*Estilos materialize del carrusel*/
+/*---------------------------------*/
+.carousel{
+    min-height: 500px; /*Contenedor*/
+}
+
+
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none; /*Ayuda a que el usuario al arrastrar la imagen no seleccione texto de ella*/
+    background-color:none;
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;/*Ayuda a que no se deforme la imagen*/
+    position: absolute;/*Pone de fondo la imagen*/
+    top: 0;
+    left: 0;
+    z-index: -1;/*Pone los textos de frente*/
+    border-radius: 15px;
+}
+
+.carousel .indicators .indicators-item{
+    border-radius: 15px;
+    transform: rotate(45deg);
+    margin: 20px;
+    background-color: salmon;
+}
+
+
 
 
 
